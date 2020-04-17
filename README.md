@@ -6,9 +6,9 @@ The purpose of this project is learning Server Side Rendering(SSR) with next.js.
 
 ## Deployed on Zeit
 
-To checkout deployed page click here [Batman fanpage](https://learn-next-js.paalchrb.now.sh/){:target="_blank"}
+To checkout deployed page click here [Batman fanpage](https://learn-next-js.paalchrb.now.sh/)
 
-Click here for more details on [Next.js deployment documentation](https://nextjs.org/docs/deployment){:target="_blank"}.
+Click here for more details on [Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
 
 ## Getting Started
