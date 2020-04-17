@@ -39,88 +39,23 @@ export const getStaticProps = async context => {
 
 export default Home; */
 
-/* import Layout from '../components/MyLayout';
-import Link from 'next/link';
-import fetch from 'isomorphic-unfetch';
-
-const ShowLink = ({ show }) => (
-  <li>
-    <Link href="/p/[id]" as={`/p/${show.id}`}>
-      <a>{show.name}</a>
-    </Link>
-    <style jsx>{`
-        h1,
-        a {
-          font-family: 'Arial';
-        }
-
-        li {
-          list-style: none;
-          margin: 5px 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
-        }
-      `}
-    </style>
-  </li>
-);
+import Layout from './components/MyLayout';
 
 const Index = props => (
   <Layout>
-    <h1>Batman TV Shows</h1>
-    <ul>
-      {props.shows.map(show => (
-        <ShowLink key={show.id} show={{id: show.id, name: show.name}} />
-      ))}
-    </ul>
-    <style jsx>{`
-        h1,
-        a {
-          font-family: 'Arial';
-        }
-
-        ul {
-          padding: 0;
-        }
-
-        li {
-          list-style: none;
-          margin: 5px 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
-        }
-      `}
-    </style>
+    <h1> frontpage</h1>
+    <p>Dedicated to real batmans fans...</p>
+    <p>Banner incomming....!</p>
   </Layout>
 );
 
-Index.getInitialProps = async function() {
-  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
-  const data = await res.json();
 
-  console.log(`Show data fetched. Count: ${data.length}`);
 
-  return {
-    shows: data.map(entry => entry.show)
-  };
-};
+export default Index;
 
-export default Index; */
-import { useRouter } from 'next/router';
+
+
+/* import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import fetch from 'node-fetch';
 
@@ -171,4 +106,17 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Index; */
+
+/* import { NextPage } from 'next';
+
+const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
+  <h1>Hello world! - user agent: {userAgent}</h1>
+);
+
+Home.getInitialProps = async ({ req }) => {
+  const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
+  return { userAgent };
+};
+
+export default Home; */
