@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 const ShowLink = ({ show }) => (
   <li>
-    <Link href="/show/[id]" as={`/show/${show.id}`}>
-      <a>{show.name}</a>
+    <Link href="/show/[id]" as={`/show/${show?.id}`}>
+      <a>{show?.name}</a>
     </Link>
     <style jsx>{`
         h1,
