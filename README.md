@@ -1,8 +1,19 @@
+# Learn Next.js
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+
+The purpose of this project is learning Server Side Rendering(SSR) with next.js. A side-effect of this process is great insight in the batman universe.
+
+
+## Deployed on Zeit
+
+To checkout deployed page click here [Batman fanpage](https://learn-next-js.paalchrb.now.sh/)
+
+Click here for more details on [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+
 
 ## Getting Started
 
-First, run the development server:
+To use this project yourself fork/clone the repository and run npm install. Then:
 
 ```bash
 npm run dev
@@ -12,12 +23,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
-## Deployed on Zeit
-
-To checkout deployed page [click here](http://linktopage.th)
-
-Click here for more details on [Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
 
 ## Learn More
